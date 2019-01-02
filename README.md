@@ -1,2 +1,2 @@
-# Star-Wars-Game
-Star Wars RPG!
+#Aliens-RPG-Game
+Aliens RPG!
