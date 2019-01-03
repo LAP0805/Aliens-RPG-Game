@@ -43,21 +43,20 @@ $(document).ready(function() {
         $("#yourCharacter").append(this);
        $("#enemies").append($("#characters div").not(this));
        $("#enemies div").css({background:"red"});
-
-       if(villain.length < 1){
+       assignHero();
+       
+       
        $("#enemies div").on("click", function(){
+        if($("#currentOpponent").is(":empty")){
         $("#currentOpponent").append($(this));
         assignVillain();
-        console.log(villain);
-    });
-}
-        else if (villain.length = 1) { 
-            $("#enemies div").on("click", function(){
-        return alert("you already have an opponent");
-    });
         }
-    assignHero();
-        });
+        else {
+            $("#enemies").append(this);
+        }
+    
+    });
+    });
 
         
 

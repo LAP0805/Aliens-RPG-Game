@@ -11,12 +11,14 @@ body {
 .characterImages {
     height:125px;
     width:125px;
+    border-radius:15px;
 }
 .characterDiv{
     width: 200px;
     float:left;
     border:2px solid black;
     margin:5px;
+    border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     text-align:center;
