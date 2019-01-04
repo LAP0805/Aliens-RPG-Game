@@ -46,6 +46,7 @@ $(document).ready(function() {
        assignHero();
        $("#enemies div").off("click");
        
+       //why does this have to be nested in the above onclick to work?//
        $("#enemies div").on("click", function(){
         if($("#currentOpponent").is(":empty")){
         $("#currentOpponent").append($(this));
