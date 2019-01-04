@@ -29,12 +29,14 @@ body {
     font-size:20px;
     width: 800px;
     padding:0px;
+    font-family:monospace;
     
 }
 #defenders{
     font-size:40px;
     width: 500px;
     padding:0px;
+    font-family:monospace;
     
 }
 #enemies {
@@ -51,26 +53,34 @@ body {
 #currentOpponentText{
     font-size:20px;
     padding:0px;
+    font-family:monospace;
 
 }
 #buttonDiv{
     width: 100px;
     float:left;
     padding:50px;
+    font-family:monospace;
 }
 #gameInfo{
     font-size: 20px;
     text-align: center;
     padding:20px;
+    font-family:monospace;
 }
 #restart {
     display:none;
     padding:20px;
     margin:30px;
     font-size:20px;
+    font-family:monospace;
 }
 #roundWon{
     display:none;
     font-size:20px;
     text-align:center;
+    font-family:monospace;
+}
+#attack{
+    font-family:monospace;
 }

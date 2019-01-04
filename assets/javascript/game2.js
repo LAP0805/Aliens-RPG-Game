@@ -44,7 +44,7 @@ $(document).ready(function() {
        $("#enemies").append($("#characters div").not(this));
        $("#enemies div").css({background:"red"});
        assignHero();
-       
+       $("#enemies div").off("click");
        
        $("#enemies div").on("click", function(){
         if($("#currentOpponent").is(":empty")){
