@@ -8,32 +8,32 @@ $(document).ready(function() {
     
     ripleyStats = {
         name: "Ripley",
-        hP: 200,
-        attack: 10,
-        increase: 10,
-        counterAttack:7,
+        hP: 120,
+        attack: 25,
+        increase: 25,
+        counterAttack:20,
     }
     vasquesStats = {
         name: "Vasquez",
-        hP: 170,
-        attack: 5,
-        increase: 5,
+        hP: 190,
+        attack: 18,
+        increase: 18,
         counterAttack:10,
     }
     hicksStats= {
         name: "Hicks",
-        hP: 150,
-        attack: 15,
-        increase: 15,
-        counterAttack:10,
+        hP: 250,
+        attack: 20,
+        increase: 20,
+        counterAttack:15,
     }
 
     alienStats = {
         name: "Xenomorph",
-        hP: 350,
-        attack: 16,
-        increase: 16,
-        counterAttack:12,
+        hP: 280,
+        attack: 25,
+        increase: 25,
+        counterAttack:20,
     }
     
     //this took me two days to figure out!!//
@@ -136,9 +136,9 @@ $("#attack").on("click", function(){
     else{
         villain.hP = villain.hP - hero.attack;
         hero.hP = hero.hP - villain.counterAttack;
-        assignStats();
         $("#gameInfo2").text("You attacked " + villain.name + " for " + hero.attack + ". " + villain.name + " counter-attacked for " + villain.counterAttack);
         hero.attack = hero.attack + hero.increase;
+        assignStats();
         if (hero.hP < 1){
             $("#restart").css({display:"block"});
             $("#gameInfo2").text("You lose!");
