@@ -8,31 +8,31 @@ $(document).ready(function() {
     
     ripleyStats = {
         name: "Ripley",
-        hP: 120,
-        attack: 25,
-        increase: 25,
-        counterAttack:20,
+        hP: 180,
+        attack: 20,
+        increase: 20,
+        counterAttack:40,
     }
     vasquesStats = {
         name: "Vasquez",
-        hP: 190,
+        hP: 220,
         attack: 18,
         increase: 18,
-        counterAttack:10,
+        counterAttack:25,
     }
     hicksStats= {
         name: "Hicks",
         hP: 250,
-        attack: 20,
-        increase: 20,
+        attack: 18,
+        increase: 18,
         counterAttack:15,
     }
 
     alienStats = {
         name: "Xenomorph",
-        hP: 280,
-        attack: 25,
-        increase: 25,
+        hP: 240,
+        attack: 20,
+        increase: 20,
         counterAttack:20,
     }
     
@@ -45,9 +45,10 @@ $(document).ready(function() {
        $("#enemies div").css({background:"red"});
        assignHero();
        $("#enemies div").off("click");
-       
-       //why does this have to be nested in the above onclick to work?//
-       $("#enemies div").on("click", function(){
+      
+    });
+//thanks to Zach for helping me un-nest this from the above function!//
+    $("#enemies").on("click", "div", function(){
         if($("#currentOpponent").is(":empty")){
         $("#currentOpponent").append($(this));
         assignVillain();
@@ -56,10 +57,7 @@ $(document).ready(function() {
             $("#enemies").append(this);
         }
     
-    });
-    });
-
-        
+    });     
 
 
 ///asign hero
