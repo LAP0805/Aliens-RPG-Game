@@ -1,86 +1,190 @@
 body {
     background-color: #ebebeb;
-    background:url("../images/alien_big.png");
-    background-repeat:no-repeat;
+    background: url("../images/alien_big.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
+
 #characters {
     height: 200px;
-    margin:0px;
+    margin: 0px;
 }
+
 .characterImages {
-    height:125px;
-    width:125px;
-    border-radius:15px;
+    height: 125px;
+    width: 125px;
+    border-radius: 15px;
 }
-.characterDiv{
+
+.characterDiv {
     width: 200px;
-    float:left;
-    border:2px solid black;
-    margin:5px;
+    float: left;
+    border: 2px solid black;
+    margin: 5px;
     border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    text-align:center;
-    background:#ebebeb;
-   
-}
-#header{
-    font-size:20px;
-    width: 800px;
-    padding:0px;
-    font-family:monospace;
-    
-}
-#defenders{
-    font-size:40px;
-    width: 500px;
-    padding:0px;
-    font-family:monospace;
-    
-}
-#enemies {
-    overflow:hidden;
-    height:205px;
-    margin:0px;
-}
- #currentOpponent, #gameInfo, #yourCharacter {
-    padding: 0px;
-    width:200px;
-    height:200px;
-    float:left;
-}
-#currentOpponentText{
-    font-size:20px;
-    padding:0px;
-    font-family:monospace;
+    text-align: center;
+    background: #ebebeb;
+
 
 }
-#buttonDiv{
-    width: 100px;
-    float:left;
-    padding:50px;
-    font-family:monospace;
+
+#header {
+    font-size: 20px;
+    width: 100%;
+    padding: 0px;
+    font-family: monospace;
+    clear: both;
+
 }
-#gameInfo{
+
+#defenders {
+    font-size: 40px;
+    width: 500px;
+    padding: 0px;
+    font-family: monospace;
+
+}
+
+#enemies {
+    overflow: hidden;
+    height: 205px;
+    margin: 0px;
+}
+
+#currentOpponent,
+#gameInfo,
+#yourCharacter {
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#currentOpponentText {
+    font-size: 20px;
+    padding: 0px;
+    font-family: monospace;
+
+}
+
+#buttonDiv {
+    width: 100px;
+    float: left;
+    padding: 50px;
+    font-family: monospace;
+}
+
+#gameInfo {
     font-size: 20px;
     text-align: center;
-    padding:20px;
-    font-family:monospace;
+    padding: 20px;
+    font-family: monospace;
 }
+
 #restart {
-    display:none;
-    padding:20px;
-    margin:30px;
-    font-size:20px;
-    font-family:monospace;
+    display: none;
+    padding: 20px;
+    margin: 30px;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
 }
-#roundWon{
-    display:none;
-    font-size:20px;
-    text-align:center;
-    font-family:monospace;
+
+#roundWon {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
 }
-#attack{
-    font-family:monospace;
+
+#attack {
+    font-family: monospace;
+}
+
+@media screen and (max-width:870px) {
+    .characterImages {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    .characterDiv {
+        width: 150px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .characterDiv {
+        width: 125px;
+        ;
+
+    }
+
+    #characters {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    #characters {
+        height: 100px;
+    }
+
+    .characterDiv {
+        width: 75px;
+        ;
+        font-size: 10px;
+    }
+
+    .characterImages {
+        height: 50px;
+        width: 50px;
+        font-size: 5px;
+    }
+
+    #header {
+        height: 50px;
+        margin: 0px;
+    }
+
+    #enemies {
+        height: 125px;
+        margin: 5px;
+    }
+
+    #defenders {
+        font-size: 20px;
+    }
+
+    #currentOpponentText {
+        font-size: 10px;
+    }
+
+    #buttonDiv {
+        width: 50px;
+        padding: 0px;
+        margin: 5px;
+
+    }
+
+    #yourCharacter {
+        width: 100px;
+        height: 100px;
+    }
+
+    #currentOpponent {
+        margin: 5px 5px 5px 40px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #restart {
+        padding: 5px;
+        margin: 5px 5px 5px 25px;
+        ;
+
+    }
 }
